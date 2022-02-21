@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidLarge1VM" type="com.learncatfacts.app.modules.androidlarge1.data.viewmodel.AndroidLarge1VM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearAndroidLarge"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageUnsplashed"
+            android:layout_height="@dimen/_360pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_unsplashcfkwe7}" tools:src="@drawable/img_unsplashcfkwe7"/>
+        <LinearLayout android:id="@+id/linearGroup2"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_97pxv"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyledeep_purple_A200cornerRadius">
+            <FrameLayout android:id="@+id/frameGroup3"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_22pxv" android:layout_width="match_parent">
+                <FrameLayout android:id="@+id/frameGroup5"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_210pxh"
+                    android:layout_marginTop="@dimen/_56pxv" android:layout_width="wrap_content">
+                    <FrameLayout
+                        android:background="@drawable/rectangle_border_white_a700"
+                        android:id="@+id/frameGroup1"
+                        android:layout_height="wrap_content" android:layout_width="match_parent"/>
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txt75"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_35pxv"
+                        android:layout_marginEnd="@dimen/_31pxh"
+                        android:layout_marginStart="@dimen/_30pxh"
+                        android:layout_marginTop="@dimen/_36pxv"
+                        android:layout_width="wrap_content"
+                        android:text="@{androidLarge1VM.androidLarge1Model.txt75}"
+                        style="@style/txtGeneralSansmedium20" tools:text="@string/lbl_75"/>
+                </FrameLayout>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtNeuteringacat"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_58pxv"
+                    android:layout_marginEnd="@dimen/_41pxh"
+                    android:layout_width="match_parent"
+                    android:text="@{androidLarge1VM.androidLarge1Model.txtNeuteringacat}"
+                    style="@style/txtRobotoregular24" tools:text="@string/msg_neutering_a_cat"/>
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:gravity="center"
+                android:id="@+id/btnGiveMeMyCatFact"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_96pxv"
+                android:layout_width="match_parent"
+                android:text="@string/msg_give_me_my_cat"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/msg_give_me_my_cat"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
